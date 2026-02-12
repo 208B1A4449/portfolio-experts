@@ -1,142 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My portfolio </title>
-	<link rel="stylesheet" href="style.css">
-	<!-- <link rel="stylesheet" href="style2.css"> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashok Varma | AI Portfolio</title>
+
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
 
+<header>
+  <div class="nav">
+    <h1 class="logo"><span>A</span>shok <span>V</span>arma</h1>
 
-	<!-- Header -->
-	<section id="header">
-		<div class="header container">
-			<div class="nav-bar">
-				<div class="brand">
-					<a href="#hero">
-						<h1><span>A</span>shok <span>V</span>arma</h1>
-					</a>
-				</div>
-				<div class="nav-list">
-					<div class="hamburger">
-						<div class="bar"></div>
-					</div>
-					<ul>
-						<li><a href="#hero" data-after="Home">Home</a></li>
-						<li><a href="#services" data-after="Service">Skills</a></li>
-						<li><a href="#projects" data-after="Projects">Projects</a></li>
-						<li><a href="#contact" data-after="Contact">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Header -->
+    <div class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
 
-	<!-- Hero Section -->
-	<section id="hero">
-		<div class="hero container">
-			<div>
-				<h1>“Simplicity is the <span> SOUL</span> of efficiency”</h1>
-				<a href="#" type="button" class="cta">Portfolio</a>
-			</div>
-		</div>
-	</section>
-	<!--End Hero Section -->
+      <button id="resumeBtn" class="resume-btn">
+        📄 Resume <span id="resumeCount">(0)</span>
+      </button>
 
-	<!-- Service Section -->
+      <button id="theme-toggle" class="theme-toggle">🌙</button>
+    </div>
+  </div>
+</header>
 
-	<section id="services">
-		<div class="service container">
-			<div class="service-top">
-				<h1 class="section-title">Sk<span>i</span>lls</h1>
-				<p>I am a BTech Student Ready to Code Your Vision into Reality <br>Equipped with Python, SQL, HTML, and
-					CSS, I'm eager to create dynamic websites and data-driven solutions for your business </p>
-			</div>
-			<div class="service-bottom">
-				<div class="service-item">
-					<div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-					<h2>Web Design</h2>
-					<p>Web design is like building a beautiful and easy-to-use house for your online stuff, making it
-						look great and work smoothly for everyone! For writing code makes a website work.</p>
-				</div>
-				<div class="service-item">
-					<div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-					<h2>Python</h2>
-					<p>Python is like a friendly snake that guides you through the jungle of code, making it easy to
-						create cool things, from websites to games to data magic! ✨</p>
-				</div>
-				<div class="service-item">
-					<div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-					<h2>SQL</h2>
-					<p>Imagine a giant filing cabinet for all your data, organized for lightning-fast searches and
-						powerful operations. That's SQL in a nutshell! ️SQL acts like a powerful search engine⚡️</p>
-				</div>
-				<div class="service-item">
-					<div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-					<h2>C</h2>
-					<p>C builds the foundations of software empires: a powerful, low-level language that sculpts raw
-						machine code, shaping it into programs like fortresses.</p>
-				</div>
-			</div>
-		</div>
+<!-- HERO -->
+<section id="hero" class="animate">
+  <h1>
+    Building <span>AI-Driven</span><br/>Intelligent Systems
+  </h1>
 
-	</section>
+  <p class="hero-sub">
+    AI / GenAI Developer <br/>
+    Python • RAG • LangChain • DataScience • DeepLearning • MachineLearning
+  </p>
 
-	<!--End Service Section -->
+  <div class="hero-actions">
+    <a href="#projects" class="btn primary">View Projects</a>
 
-	<!-- Start Projects Section -->
-	<section id="projects">
-		<div class="projects-container">
-			<div class="projects-top">
-				<h1 class="section-title">Projects</h1>
-				<p>In My Graduation, I have Done projects using Python,Html,CSS as a Front-End Developer Recently I
-					Completed a IBM internship as a Front-End Developer</p>
-			</div>
-			<div class="projects-bottom">
-				<div class="projects-item">
-					<div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-					<h2>IBM Intern</h2>
-					<p>IBM Internship: Honed front-end skills on Portfolio at tech giant IBM, collaborating seamlessly
-						and tackling new challenges like attractive User-friendly UI.</p>
-				</div>
-				<div class="projects-item">
-					<div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-					<h2>Ashraya Foundation</h2>
-					<p>
-						Ashraya Foundation (AF) is a public charitable trust, established to create impact in
-						improvement of living standards of needy people in the society.</p>
-				</div>
-				<div class="projects-item">
-					<div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-					<h2>Sentiment Analysis</h2>
-					<p>Python deciphers the heart of text, revealing sentiment's secrets—from joyful highs to gloomy
-						lows—in just a few lines of code using python libraries like NLTK✨</p>
-				</div>
-			</div>
+    <a href="assets/Ashok_Varma_Resume.pdf"
+       target="_blank"
+       rel="noopener"
+       class="btn outline">
+      👁 View Resume
+    </a>
+  </div>
+</section>
 
-		</div>
+<!-- SKILLS -->
+<section id="skills" class="animate">
+  <h2 class="section-title">Core Skills</h2>
 
-	</section>
-	<!-- End Projects Section -->
+  <div class="grid">
+    <div class="card skill animate-item">
+      <h3>GenAI / Agentic AI</h3>
+      <p>Generative AI, Agentic AI, Prompt Engineering, Tool Calling, Multi-Agent Systems</p>
+    </div>
 
-	<!--  -->
-	<section id="contact">
-		<div class="contact-container">
-			<h1 class="section-title">Contact Me</h1>
-			<div class="contact-details">
-				<a href="" target="_blank" rel="noopener norefferrer"><i class="bi bi-facebook"></i></a>
-				<a href="" target="_blank" rel="noopener norefferrer"><i class="bi bi-instagram"></i></a>
-				<a href="" target="_blank" rel="noopener norefferrer"><i class="bi bi-linkedin"></i></a>
-			</div>
-		</div>
-	</section>
+    <div class="card skill animate-item">
+      <h3>GenAI Frameworks & RAG</h3>
+      <p>LangChain, LangGraph, CSV / PDF RAG, Agent Routing</p>
+    </div>
 
+    <div class="card skill animate-item">
+      <h3>Python</h3>
+      <p>Pandas, NumPy, API Integrations, Jupyter Notebook</p>
+    </div>
+
+    <div class="card skill animate-item">
+      <h3>Machine Learning / Deep Learning</h3>
+      <p>Machine Learning, Deep Learning, Scikit-learn, TensorFlow, Keras</p>
+    </div>
+
+    <div class="card skill animate-item">
+      <h3>Frontend</h3>
+      <p>HTML, CSS, JavaScript, Streamlit</p>
+    </div>
+
+    <div class="card skill animate-item">
+      <h3>Tools</h3>
+      <p>Git, GitHub, Hugging Face Spaces</p>
+    </div>
+
+    <div class="card skill animate-item">
+      <h3>AI / NLP</h3>
+      <p>Sentiment Analysis, Text Classification, NLTK, Statistics & Probability</p>
+    </div>
+
+    <div class="card skill animate-item">
+      <h3>Backend & APIs</h3>
+      <p>Flask, FastAPI, REST API Development</p>
+    </div>
+
+    <div class="card skill animate-item">
+      <h3>Data Analysis & Visualization</h3>
+      <p>Data Collection, Data Cleaning, EDA, Matplotlib, Seaborn, Power BI, Excel</p>
+    </div>
+
+    <div class="card skill animate-item">
+      <h3>Databases</h3>
+      <p>SQL, MySQL, Analytical Queries</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="animate">
+  <h2 class="section-title">AI Projects</h2>
+
+  <div class="grid">
+    
+    <div class="card project animate-item"
+     data-title="📊 AI-Powered Data Analysis Agent"
+     data-description="Upload a dataset and ask analytical questions in natural language. The system plans, executes, repairs code if needed, generates charts, and explains results in human-readable form. Built with Streamlit, LangGraph, and Groq LLM for safe and structured multi-step analysis."
+     data-tech="Python, Streamlit, Pandas, Matplotlib, LangGraph, Groq LLM"
+     data-link="https://github.com/208B1A4449/DataAnalysisAgent">
+
+      <h3>📊 AI-Powered Data Analysis Agent</h3>
+      <p>
+          Upload a dataset (CSV/Excel) and ask natural language questions. 
+          The system intelligently plans multi-step analysis, executes safe Pandas code, auto-repairs errors, visualizes results, 
+          and provides human-friendly explanations powered by Groq LLM.
+      </p>
+      <span class="view-more">Click to view details →</span>
+    </div>
+
+    <div class="card project animate-item"
+     data-title="😷 Face Mask Detection Web App"
+     data-description="A real-time face mask detection web application that classifies individuals as Mask or No Mask using live webcam feed or uploaded images. The system uses OpenCV Haar Cascade for face detection and a custom-trained CNN model for classification. The app displays prediction confidence and supports real-time inference through Streamlit."
+     data-tech="Python, Streamlit, OpenCV, TensorFlow, Keras, CNN"
+     data-link="https://huggingface.co/spaces/nani7650/Mask_Detection_App">
+
+      <h3>😷 Face Mask Detection Web App</h3>
+      <p>
+        Real-time face mask detection system using webcam or images,
+        powered by a CNN model with OpenCV-based face detection.
+      </p>
+      <span class="view-more">Click to view details →</span>
+    </div>
+
+    <div class="card project animate-item"
+        data-title="🎗️ Cancer Prediction System"
+        data-description="A machine learning–based cancer prediction web application that estimates cancer likelihood from patient clinical data. The system supports multiple ML models including Logistic Regression, SVM, KNN, Decision Tree, Random Forest, and XGBoost. A unified preprocessing pipeline handles missing values, feature scaling, and categorical encoding, allowing seamless model comparison through an interactive Streamlit interface."
+        data-tech="Python, Streamlit, Scikit-learn, XGBoost, Pandas"
+        data-link="https://huggingface.co/spaces/nani7650/Cancer_Prediction">
+
+        <h3>🎗️ Cancer Prediction System</h3>
+        <p>
+          ML-powered web app for predicting cancer risk using multiple
+          classification models and structured medical data.
+        </p>
+        <span class="view-more">Click to view details →</span>
+    </div>
+
+    <div class="card project animate-item"
+     data-title="🎬 Movie Recommendation System"
+     data-description="A content-based movie recommendation system inspired by Netflix-style ranking. It uses cosine similarity on movie metadata and enhances recommendations using weighted scoring based on similarity, vote count, average rating, and language preference. The app includes fuzzy search for autocomplete movie selection and provides personalized recommendations through an interactive Streamlit UI."
+     data-tech="Python, Streamlit, Pandas, Scikit-learn, RapidFuzz"
+     data-link="https://huggingface.co/spaces/nani7650/ContentBaseMovieRecommender">
+
+      <h3>🎬 Movie Recommendation System</h3>
+      <p>
+        Content-based movie recommender using cosine similarity,
+        fuzzy search, and weighted ranking logic.
+      </p>
+      <span class="view-more">Click to view details →</span>
+    </div>
+
+    <div class="card project animate-item"
+        data-title="🧠 Data Science Tutor"
+        data-description="An LLM-powered mentor-style tutor designed to explain Data Science, Machine Learning, Statistics, and Generative AI concepts with senior-level clarity. The system enforces strict domain control, avoids hallucinations, and adapts explanations based on user intent. Built using Streamlit and Groq LLMs with strong instructional guardrails."
+        data-tech="Python, Streamlit, Groq API, LLMs, Prompt Engineering"
+        data-link="https://github.com/208B1A4449/DataScienceTutor">
+
+        <h3>🧠 Data Science Tutor</h3>
+        <p>
+          Mentor-style AI tutor for Data Science and Generative AI,
+          focused on intuition, trade-offs, and real-world understanding.
+        </p>
+        <span class="view-more">Click to view details →</span>
+    </div>
+
+    <div class="card project animate-item"
+        data-title="🩺 Diabetes Prediction System"
+        data-description="A machine learning–based diabetes prediction web application that estimates the likelihood of diabetes using patient health metrics. The system applies a complete preprocessing pipeline including missing value handling, feature scaling, and normalization, followed by classification using multiple ML algorithms. Built with Streamlit to provide real-time predictions through an intuitive interface."
+        data-tech="Python, Streamlit, Scikit-learn, Pandas, Machine Learning"
+        data-link="https://huggingface.co/spaces/nani7650/Diabetes_Prediction">
+
+        <h3>🩺 Diabetes Prediction System</h3>
+        <p>
+          Machine learning web app that predicts diabetes risk
+          using patient health and diagnostic data.
+        </p>
+        <span class="view-more">Click to view details →</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="animate dark">
+  <h2 class="section-title">Contact</h2>
+
+  <div class="icons">
+    <a href="mailto:ashokvarmavatsavai360@gmail.com"><i class="bi bi-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/vatsavai-ashok-varma/" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/208B1A4449" target="_blank"><i class="bi bi-github"></i></a>
+    <a href="https://huggingface.co/nani7650/spaces" target="_blank">🤗</a>
+  </div>
+
+  <p class="footer">© 2026 Ashok Varma • AI Developer</p>
+</section>
+
+<div id="toast">Downloading resume…</div>
+
+<!-- PROJECT DETAILS MODAL -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+
+    <div class="modal-header">
+      <h3 id="modalTitle"></h3>
+      <span class="close">&times;</span>
+    </div>
+
+    <div class="modal-body">
+      <p id="modalDescription"></p>
+
+      <p class="tech">
+        <strong>Tech Stack:</strong>
+        <span id="modalTech"></span>
+      </p>
+    </div>
+
+    <div class="modal-footer">
+      <a id="modalLink" target="_blank" class="btn primary">
+        View Live Project →
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
-
 </html>
